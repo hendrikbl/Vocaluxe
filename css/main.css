@@ -112,6 +112,13 @@ a:hover {
   color: #E74C3C;
 }
 
+/*@media (min-width: 1200px ) {
+  .container {
+      width: 100%;
+      max-width: 1620px;
+  }
+}*/
+
 .row {
   padding: 50px 0px;
   margin: 0;
@@ -146,6 +153,16 @@ a:hover {
   font-size: 50px;
   margin-bottom: 35px;
   margin-top: 0px;
+}
+
+.title::after {
+	content: '';
+	width: 100px;
+	display: block;
+	height: 1px;
+	border-bottom: 4px solid #de4f4f;
+	text-align: center;
+	margin: 10px auto 0;
 }
 
 /*.subtitle {
@@ -317,12 +334,13 @@ a:hover {
   background: #2C3E50;
   color: #fff;
   padding-top: 50px;
-  padding-bottom: 25px;
-  background-image: url(../img/hero-image.jpg);
-  background-size: cover;
-  background-position: center;
+  padding-bottom: 100px;
+  height: 95vh;
+  background-image: url(../img/Unbenannt_2.png);
+  /*background-size: cover;*/
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-blend-mode: soft-light;
+  /*background-blend-mode: soft-light;*/
 }
 
 #hero-area img {
@@ -353,6 +371,10 @@ a:hover {
   font-size: 60pt;
   text-align: left;
   margin-bottom: 5px;
+}
+
+#hero-area .title::after {
+  display: none;
 }
 
 #hero-area .subtitle {
@@ -597,6 +619,10 @@ a:hover {
 
 /***Features***/
 
+#about .flex-box-col {
+  padding: 0 20px;
+}
+
 #about .card {
   height: 250px;
   background-color: #fff;
@@ -605,7 +631,7 @@ a:hover {
   border: 1px solid #2C3E50;
 }
 
-#about .card img {
+#about img {
   z-index: 4;
   height: 100px;
   margin-left: auto;
@@ -613,20 +639,15 @@ a:hover {
   margin-top: 50px;
 }
 
-#about .card .overlay-content p {
-  padding: 0 15px;
+#about p {
+  text-align: center;
+  font-size: 12pt;
 }
 
-#about .card .overlay-content h4 {
-  font-size: 20pt;
+#about h3 {
+  text-align: center;
   color: #2C3E50;
-  padding: 0px;
-  margin-top: -70px;
-  margin-bottom: 70px;
-  -webkit-transition: all 0.27s ease-in-out;
-  -moz-transition: all 0.27s ease-in-out;
-  -o-transition: all 0.27s ease-in-out;
-  transition: all 0.27s ease-in-out;
+  font-weight: bold;
 }
 
 #about .card:hover .overlay-content h4 {

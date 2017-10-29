@@ -6,17 +6,9 @@
       <h2 class="subtitle">{{ page.subtitle }}</h2>
       {% for feature in site.data.features %}
       <div class="col-md-3 col-sm-6 flex-box-col">
-        <div class="card hover-card dark-text">
-          <img src="{{site.baseurl}}/img/features/{{ feature.image }}" class="img-responsive" alt="">
-          <div class="hover-overlay blue-bg">
-            <div class="overlay-background">
-              <div class="overlay-content">
-                <h4>{{ feature.title }}</h4>
-                <p>{{ feature.description }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <img src="{{site.baseurl}}/img/features/{{ feature.image }}" class="img-responsive" alt="">
+        <h3>{{ feature.title }}</h3>
+        <p>{{ feature.description }}</p>
       </div>
       {% endfor %}
     </div>

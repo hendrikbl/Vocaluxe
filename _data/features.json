@@ -37,10 +37,5 @@
 	"title": "Songs",
 	"image": "songs.png",
 	"description": "Vocaluxe can play any song in the widely used UltraStar format. Choose from thousands of songs available online."
-},
-{
-	"title": "Multi-Language",
-	"image": "translations.png",
-	"description": "Vocaluxe supports many different languages - If your language isn't available just start translating it!"
 }
 ]
