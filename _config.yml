@@ -3,7 +3,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://new.vocaluxe.org"
+url: "https://vocaluxe.org"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,7 +12,7 @@ url: "https://new.vocaluxe.org"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /Vocaluxe
+baseurl: ""
 
 # Google tracking id to track your visitors
 
@@ -26,12 +26,12 @@ force-https: True
 
 repository: Vocaluxe/Vocaluxe
 
-#############
-# HTML Head #
-#############
+#####################
+# HTML Head ans SEO #
+#####################
 
-lang: "en"
-author: "Vocaluxe"
+lang: "en_US"
+author: "Vocaluxe Team"
 title: "Vocaluxe"
 subtitle: "Sing your favorite songs"
 description: "Vocaluxe is a free and open source singing game, inspired by the original UltraStar (developed by corvus5) and the great Ultrastar Deluxe project. It allows up to six players to sing along with music using microphones in order to score points, depending on the pitch of the voice and the rhythm of singing."
@@ -98,4 +98,5 @@ gems:
   - github-pages
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-seo-tag
   #- jemoji
