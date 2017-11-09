@@ -130,12 +130,12 @@ body {
 }
 
 a {
-  color: #428bca;
+  color: $blue;
   @include transition(all 0.2s linear);
 }
 
 a:hover {
-  color: #E74C3C;
+  color: $red;
 }
 
 .row {
@@ -151,7 +151,7 @@ a:hover {
 
 .btn:hover {
   background: rgba(0, 0, 0, 0.2);
-  color: white;
+  color: #fff;
 }
 
 .btn-lg {
@@ -176,7 +176,7 @@ a:hover {
 	width: 100px;
 	display: block;
 	height: 1px;
-	border-bottom: 4px solid #de4f4f;
+	border-bottom: 4px solid $red;
 	text-align: center;
 	margin: 10px auto 0;
 }
@@ -187,15 +187,264 @@ a:hover {
 
 #songs,
 #gallery {
-  background: #2C3E50;
+  background: $dark-blue;
   color: #fff;
 }
 
 #news,
 #about,
 #contribute {
-  background: #EEEEEE;
+  background: #eee;
 }
 
 
 /*************/
+
+/****Navbar***/
+
+.navbar {
+  margin-bottom: 0;
+  color: #fff;
+
+  li {
+    color: #fff;
+  }
+
+}
+
+.navbar-default {
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  padding-top: 30px;
+  @include transition(all 0.2s linear);
+
+  .navbar-nav>.active>a,
+  .navbar-nav>.active>a:hover,
+  .navbar-nav>.active>a:focus {
+    background: none;
+    color: #fff;
+  }
+
+  .navbar-nav li a,
+  .navbar-nav li a:hover,
+  .navbar-nav li a:focus {
+    color: #fff;
+  }
+
+  .navbar-nav>.active,
+  .navbar-nav li:hover,
+  .navbar-nav li:focus {
+    border-bottom: 3px solid $blue;
+    color: #fff;
+  }
+
+  .navbar-brand {
+    color: #fff;
+    font-size: 24pt;
+    @include transition(all 0.2s linear);
+  }
+
+  .faviconPng {
+    height: 25pt;
+    width: 25pt;
+    vertical-align: sub;
+    @include transition(all 0.2s linear);
+  }
+
+  .navbar-brand:hover {
+    color: #eee;
+  }
+
+  .navbar-toggle {
+    border: none;
+  }
+
+  .navbar-toggle .icon-bar {
+    background: #fff;
+  }
+
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    background: rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+
+.affix.navbar-default {
+  background: $dark-blue;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding-top: 0;
+  @include transition(all 0.2s linear);
+
+  .navbar-brand {
+    font-size: 16pt !important;
+    color: #fff;
+    @include transition(all 0.2s linear);
+  }
+
+  .navbar-brand .faviconPng {
+    height: 16pt;
+    width: 16pt;
+    @include transition(all 0.2s linear);
+  }
+}
+
+
+@media (max-width: 767px) {
+  .navbar-default {
+    background: $dark-blue;
+    padding-top: 0px;
+
+    .navbar-nav>.active,
+    .navbar-nav li:hover,
+    .navbar-nav li:focus {
+      border-bottom: none;
+      border-left: 4px solid $blue;
+      font-weight: bold;
+    }
+
+    .navbar-brand {
+      font-size: 16pt;
+    }
+
+    .faviconPng {
+      height: 16pt;
+      width: 16pt;
+      vertical-align: text-bottom;
+    }
+  }
+}
+
+
+/*************/
+
+/**Hero area**/
+
+#hero-area {
+  background: $dark-blue;
+  color: #fff;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  min-height: 95vh;
+  background-image: url(../img/hero-bg.png);
+  /*background-size: cover;*/
+  background-position: bottom;
+  background-repeat: no-repeat;
+  /*background-blend-mode: soft-light;*/
+
+  img {
+    max-width: 100%;
+    margin-top: 125px;
+  }
+
+  p {
+    font-size: 14pt;
+    font-weight: 100;
+    padding: 25px 0;
+  }
+
+  .row {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .btn {
+    margin-right: 20px;
+  }
+
+  .title {
+    font-size: 60pt;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .title::after {
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 32pt;
+    font-weight: 100;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+
+@media (max-width: 991px) {
+  #hero-area {
+    img {
+      display: none;
+    }
+
+    .row {
+      padding-top: 75px;
+      padding-bottom: 50px;
+    }
+  }
+}
+
+/**************/
+
+/*****News*****/
+
+#news {
+  img {
+    width: 100%;
+  }
+
+  h2, h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .post-info {
+    font-size: 12pt;
+  }
+
+  .more {
+    margin: 24px 0 0 0;
+
+    .btn {
+      border: 1px solid $blue;
+      color: $blue;
+    }
+
+    .btn:hover {
+      background: transparent;
+      color: $red;
+      border: 1px solid $red;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #news .col-md-12 {
+    padding: 0;
+    margin-left: 0;
+  }
+}
+
+.news-card {
+  padding: 0;
+  margin: 10px 0px;
+  border: 1px solid $dark-blue;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.news-card-text {
+  padding: 10px;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+/**************/
