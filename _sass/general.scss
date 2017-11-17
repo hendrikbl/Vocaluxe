@@ -1,0 +1,24 @@
+section {
+  padding: 35px 0 ;
+}
+
+.section-title::after {
+  display: block;
+  width: 100px;
+  height: 1px;
+  margin: 10px auto 0;
+  content: '';
+  text-align: center;
+  border-bottom: 4px solid;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+  @include transition(all 0.2s linear);
+}
+
+a:hover {
+  text-decoration: none;
+  color: $red;
+}

@@ -1,0 +1,18 @@
+#footer {
+  ul {
+    font-size: 1.5rem;
+    line-height: 1.2;
+
+    li {
+      margin-left: 10px;
+    }
+  }
+
+  a {
+    color: #fff;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}

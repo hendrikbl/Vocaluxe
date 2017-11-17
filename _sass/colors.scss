@@ -1,23 +1,23 @@
 /**
  *  COLORS
  */
-
 $blue: #428bca;
 $red: #e74c3c;
 $dark-blue: #2c3e50;
+$dark-blue-darken: #233240;
 $light-grey: #eee;
 
 $color-map: (
   'blue': $blue,
   'red': $red,
   'dark-blue': $dark-blue,
+  'dark-blue-darken': $dark-blue-darken,
   'light-grey': $light-grey
 );
 
 /**
  *  BACKGROUND COLORS
  */
-
 .bg {
   @each $name, $color in $color-map {
     &-#{$name} {

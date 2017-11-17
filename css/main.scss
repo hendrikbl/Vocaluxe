@@ -5,8 +5,8 @@ $font-family-base: "Lato";
 $body-color: $dark-blue;
 @import "bootstrap";
 
+@import "general";
 @import "buttons";
 
 @import "features";
-
-@import "layout";
+@import "footer";

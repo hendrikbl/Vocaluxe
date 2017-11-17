@@ -1,29 +1,39 @@
 <!-- Footer -->
 
-<footer class="footer">
+<footer id="footer" class="bg-dark-blue-darken pt-3">
   <div class="container">
-    <div class="footer-left">
-      {% if page.section-type == "index" %}
-      <a href="#"><h3>Vocaluxe</h3></a> {% else %}
-      <a href="{{site.baseurl}}/"><h3>Vocaluxe</h3></a> {% endif %}
+    <div class="row ">
+      <div class="col">
+        {% if page.section-type == "index" %}
+          <a href="#">
+            <h4>Vocaluxe</h4>
+          </a>
+        {% else %}
+          <a href="{{site.baseurl}}/">
+            <h4>Vocaluxe</h4>
+          </a>
+        {% endif %}
+      </div>
+      <div class="col-auto">
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="https://github.com/Vocaluxe/Vocaluxe">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://facebook.com/Vocaluxe">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="{{site.baseurl}}/feed.xml">
+              <i class="fa fa-rss" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <ul class="footer-right">
-      <li>
-        <a href="https://github.com/Vocaluxe/Vocaluxe">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-      </li>
-      <li>
-        <a href="https://facebook.com/Vocaluxe">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-      </li>
-      <li>
-        <a href="{{site.baseurl}}/feed.xml">
-            <i class="fa fa-rss" aria-hidden="true"></i>
-          </a>
-      </li>
-    </ul>
   </div>
 </footer>
 
