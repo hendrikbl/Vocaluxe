@@ -24,4 +24,5 @@ group :jekyll_plugins do
    gem "jekyll-paginate"
    gem "github-pages", "~> 111"
    gem "jekyll-seo-tag"
+   gem "bootstrap", "~> 4.0.0.beta2"
 end

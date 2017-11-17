@@ -1,0 +1,13 @@
+.img-feature {
+  height: 100px;
+}
+
+.section-title::after {
+  display: block;
+  width: 100px;
+  height: 1px;
+  margin: 10px auto 0;
+  content: '';
+  text-align: center;
+  border-bottom: 4px solid $red;
+}

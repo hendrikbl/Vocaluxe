@@ -1,5 +1,5 @@
 [{
-	"title": "Party modes",
+	"title": "Party Modes",
 	"image": "partymode.png",
 	"description": "Find the best singer by going head to head in challenge mode, or battle for control of the board in Tic-Tac-Toe - Vocaluxe offers several party modes"
 },
@@ -24,12 +24,12 @@
 	"description": "Singing is even more fun when you can see yourself - Vocaluxe supports webcams. You can also use it to take pictures for the player profiles."
 },
 {
-	"title": "GamePad & WiiMote",
+	"title": "Controller Support",
 	"image": "controller.png",
 	"description": "Besides keyboard and mouse Vocaluxe has build-in support for GamePads and WiiMote"
 },
 {
-	"title": "Smartphone control",
+	"title": "Smartphone Control",
 	"image": "smartphone.png",
 	"description": "With smartphone control you can remote control Vocaluxe or just take funny pictures of your singing friends. Add new player profiles for late arrivals or browse the song list to find out what to sing next."
 },

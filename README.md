@@ -1,5 +1,13 @@
 # VocaluxeWebsite
-This branch contains our GitHub-Page. It's accessible via http://new.vocaluxe.org and based on [Jekyll](https://jekyllrb.com/), a popular static site generator.
+This branch contains our GitHub-Page. It's accessible via http://vocaluxe.org and based on [Jekyll](https://jekyllrb.com/), a popular static site generator.
+
+## Build with
+- Jekyll
+- Bootstrap 4
+- jQuery 3.2.1
+- animate.css
+- fontawesome 4.7.0
+- swipebox
 
 ## Working on this website
 For easier working on this website and to not mess around with all other branches, we suggest to clone this as a single-branch. Just follow these steps:
@@ -12,5 +20,5 @@ For easier working on this website and to not mess around with all other branche
 
 You're now able to make some changes, create commits and open pull-request. When pulling or pushing some changes, we recommend to specify your branch. Otherwise you would download the whole Vocaluxe project and waste some disc space. Use `git pull origin gh-pages` for pulling your own changes.
 
-## Opening issues and pull requests
+## Contribute
 We're happy if you have some ideas or find bugs on our website. Please add the `website`-label when opening a new issue or pull request.

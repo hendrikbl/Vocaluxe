@@ -1,17 +1,15 @@
 <!-- Hero Area Section -->
 
-<section id="hero-area">
+<section id="hero-area" class="bg-dark-blue">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="col-md-6 col-xs-12 animated fadeInLeft delay-0-5 hero-text">
-          <h1 class="title">{{site.title}}</h1>
-          <h2 class="subtitle">{{site.subtitle}}</h2>
-          <p>{{ site.full-description }}</p>
-          <a href="#download" class="btn btn-primary btn-lg blue-bg">Download Now!</a>
-          <a href="#about" class="btn btn-common btn-lg">Learn More</a>
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto text-center text-white">
+        <h1 class="mb-3">{{site.subtitle}}</h1>
+        <p>{{site.description}}</p>
+        <div class="mt-5">
+          <a class="btn btn-primary mr-3" href="#download" role="button">Download Now!</a>
+          <a class="btn btn-outline-primary" href="#about" role="button">Learn More</a>
         </div>
-        <img class="col-md-6 col-xs-12 animated fadeInRight" src="{{site.baseurl}}/img/notes.png" alt="">
       </div>
     </div>
   </div>

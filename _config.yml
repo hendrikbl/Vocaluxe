@@ -33,7 +33,7 @@ repository: Vocaluxe/Vocaluxe
 lang: "en_US"
 author: "Vocaluxe Team"
 title: "Vocaluxe"
-subtitle: "Sing your favorite songs"
+subtitle: "Sing your favorite songs!"
 description: "Vocaluxe is a free and open source singing game, inspired by SingStar™ and the great Ultrastar Deluxe project for up to six players."
 full-description: "Vocaluxe is a free and open source singing game, inspired by SingStar™ and the great Ultrastar Deluxe project. It allows up to six players to sing along with music using microphones in order to score points, depending on the pitch of the voice and the rhythm of singing."
 keywords: "Vocaluxe, SingStar, UltraStar, sing, singen, game, party, karaoke, song, Lied, singing, open source, free, gratis, multiplayer, pc, computer, download"
@@ -82,12 +82,12 @@ paginate: 5
 
 pages_list:
   Home: 'hero-area'
-  News: 'news'
-  Download: 'download'
-  Features: 'about'
-  Help: 'help'
-  Contribute: 'contribute'
-  Songs: 'songs'
+  # News: 'news'
+  # Download: 'download'
+  Features: 'features'
+  # Help: 'help'
+  # Contribute: 'contribute'
+  # Songs: 'songs'
 
 # Exclusion list from the generated _site
 
