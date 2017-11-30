@@ -1,13 +1,13 @@
-<p class="download-table-row">
+<p class="download-row d-flex justify-content-between">
   <span>
     {% if include.os == "Linux" %}
-        <span class="fa fa-linux btnDownloadIcon" aria-hidden="true"></span>
+        <span class="fa fa-linux mr-1" aria-hidden="true"></span>
     {% else %}
-        <span class="fa fa-windows btnDownloadIcon" aria-hidden="true"></span>
+        <span class="fa fa-windows mr-1" aria-hidden="true"></span>
     {% endif %}
     <span>{{include.type}}</span>
   </span>
-  <span class="right">
+  <span>
     {% if include.x86 != nil %}
       <a href={{include.x86}}>x86</a>
       {% if include.x64 != nil %}

@@ -83,7 +83,7 @@ paginate: 5
 pages_list:
   Home: 'hero-area'
   # News: 'news'
-  # Download: 'download'
+  Download: 'download'
   Features: 'features'
   # Help: 'help'
   # Contribute: 'contribute'

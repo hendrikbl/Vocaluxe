@@ -12,22 +12,20 @@
   {% include navigation.html %}
 {% endcomment %}
 
-  {% include hero_area.html %}
+    {% include hero_area.html %}
 
-  {% for p in site.pages_list %}
-    {% for page in site.pages %}
-      {% if p[1] == page.section-type %}
-        {% include {{ page.path }} %}
-      {% endif %}
+    {% for p in site.pages_list %}
+      {% for page in site.pages %}
+        {% if p[1] == page.section-type %}
+          {% include {{ page.path }} %}
+        {% endif %}
+      {% endfor %}
     {% endfor %}
-  {% endfor %}
 
+    {% include footer.html %}
 
-  {% include footer.html %}
+    {% include js.html %}
 
-{% comment %}
-  {% include js.html %}
-{% endcomment %}
   </body>
 </html>
 

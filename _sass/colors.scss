@@ -2,14 +2,18 @@
  *  COLORS
  */
 $blue: #428bca;
+$blue-darken: #356fa2;
 $red: #e74c3c;
+$red-darken: #b93d30;
 $dark-blue: #2c3e50;
 $dark-blue-darken: #233240;
 $light-grey: #eee;
 
 $color-map: (
   'blue': $blue,
+  'blue-darken': $blue-darken,
   'red': $red,
+  'red-darken': $red-darken,
   'dark-blue': $dark-blue,
   'dark-blue-darken': $dark-blue-darken,
   'light-grey': $light-grey

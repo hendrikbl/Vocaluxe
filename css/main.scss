@@ -2,11 +2,13 @@
 ---
 @import "colors";
 $font-family-base: "Lato";
+$font-size-base: 1.1rem;
 $body-color: $dark-blue;
 @import "bootstrap";
 
 @import "general";
 @import "buttons";
 
+@import "download";
 @import "features";
 @import "footer";

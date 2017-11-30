@@ -1,3 +1,4 @@
+/*
 //Swipebox
 //Use .swipebox class
 (function($) {
@@ -5,11 +6,12 @@
   $(".swipebox").swipebox();
 
 })(jQuery);
+*/
 
 //Download Cards
 
 function showCard(card) {
-  card.addClass("animated flipInY").removeClass("flipOutY hidden");
+  card.addClass("flipInY").removeClass("flipOutY invisible");
 }
 
 function hideCard(card) {
@@ -17,35 +19,37 @@ function hideCard(card) {
 }
 
 // Nightlies
-$(".dark-bg .btnDownload").click(function() {
-  showCard($(".dark-bg .card-overlay"));
+$("#nightly .btn").click(function() {
+  showCard($("#nightly .card-overlay"));
 });
 
-$(".dark-bg .card-overlay .close-icon").click(function () {
-  hideCard($(".dark-bg .card-overlay"));
+$("#nightly .close-icon").click(function () {
+  hideCard($("#nightly .card-overlay"));
 });
 
 // Pre Release
-$(".red-bg .btnDownload").click(function() {
-  showCard($(".red-bg .card-overlay"));
+$("#prerelease .btn").click(function() {
+  showCard($("#prerelease .card-overlay"));
 });
 
-$(".red-bg .card-overlay .close-icon").click(function () {
-  hideCard($(".red-bg .card-overlay"));
+$("#prerelease .close-icon").click(function () {
+  hideCard($("#prerelease .card-overlay"));
 });
 
 // Stable
-$(".blue-bg .btnDownload").click(function() {
-  showCard($(".blue-bg .card-overlay"));
+$("#stable .btn").click(function() {
+  showCard($("#stable .card-overlay"));
 });
 
-$(".blue-bg .card-overlay .close-icon").click(function () {
-  hideCard($(".blue-bg .card-overlay"));
+$("#stable .close-icon").click(function () {
+  hideCard($("#stable .card-overlay"));
 });
 
+/*
 // Close menu after click (on mobile)
 $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
         $(this).collapse('hide');
     }
 });
+*/
