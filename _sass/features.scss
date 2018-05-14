@@ -1,7 +1,9 @@
 #features {
 
   .img-feature {
-    height: 100px;
+    height: 65px;
+    // TODO use svg for easy color change
+    filter: hue-rotate(160deg) saturate(6);
   }
 
   .section-title::after {

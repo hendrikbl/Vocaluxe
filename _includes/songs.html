@@ -1,33 +1,20 @@
 <!-- Songs Section -->
-    <section id="{{ page.section-type }}" class="content-section">
-        <div class="container">
-            <div class="row">
-                <h1 class="title">{{ page.title }}</h1>
-                <p>{{ page.content | markdownify }}</p>
-                <div class="flex-box-row">
-                    {% for song in site.data.songs %}
-                        <div class="col-md-6 col-sm-5 flex-box-col card hover-card dark-text">
-                          <div class="flex-box-row">
-                            <div class="col-md-3 flex-box-col">
-                              <span class="song-icon fa fa-{{ song.icon }} flex00a" aria-hidden="true"></span>
-                            </div>
-                            <div class="col-md-9 flex-box-col song-text">
-                              <h2 class="flex00a">{{ song.title }}</h2>
-                              <p class="flex11100">{{ song.description }}</p>
-                            </div>
-                          </div>
-                          <div class="hover-overlay red-bg">
-                            <div class="overlay-background">
-                              <div class="overlay-content">
-                                <p><span class="song-icon fa fa-{{ song.icon }} flex00a" aria-hidden="true"></span></p>
-                                <p><a href="{{ song.url }}" class="btn btn-primary btn-lg">{{ song.url_text }}</a></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="{{ page.section-type }}">
+  <div class="container">
+    <div class="text-center">
+      <h1 class="section-title">{{ page.title }}</h1>
+      <h2>{{ page.subtitle }}</h2>
+      <p>{{ page.content | markdownify }}</p>
+    </div>
+    <div class="row justify-content-around">
+      {% for song in site.data.songs %}
+      <div class="col-sm-5 d-flex flex-column">
+        <h2>{{ song.title }}</h2>
+        <p>{{ song.description }}</p>
+        <p><a href="{{ song.url }}" class="btn btn-primary">{{ song.url_text }}</a></p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 <!-- Songs Section End -->

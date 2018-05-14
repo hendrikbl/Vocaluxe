@@ -85,9 +85,9 @@ pages_list:
   # News: 'news'
   Download: 'download'
   Features: 'features'
-  # Help: 'help'
+  Songs: 'songs'
   # Contribute: 'contribute'
-  # Songs: 'songs'
+  # Help: 'help'
 
 # Exclusion list from the generated _site
 
@@ -107,4 +107,3 @@ gems:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-seo-tag
-  #- jemoji
